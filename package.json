@@ -1,0 +1,20 @@
+{
+  "name": "portifolio-lucas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasDavid80/portifolio-lucas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasDavid80/portifolio-lucas/issues"
+  },
+  "homepage": "https://github.com/LucasDavid80/portifolio-lucas#readme",
+  "description": ""
+}
