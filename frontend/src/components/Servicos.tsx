@@ -1,4 +1,4 @@
-import { Code, Smartphone, BookOpen } from 'lucide-react'; // Ícones bonitos
+import { Code, Smartphone } from 'lucide-react'; // Removi o 'BookOpen' pois não será mais usado
 
 export default function Servicos() {
     return (
@@ -9,7 +9,8 @@ export default function Servicos() {
                     Como posso <span className="text-green-500">ajudar você?</span>
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* ALTERADO: De grid-cols-3 para grid-cols-2 e adicionado max-w-4xl para centralizar */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
                     {/* Card 1: Freelance Web */}
                     <div className="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 hover:border-green-500 transition hover:-translate-y-2">
@@ -36,9 +37,9 @@ export default function Servicos() {
                     </div>
 
                     {/* Card 3: Aulas (O dinheiro rápido) */}
-                    <div className="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 hover:border-green-500 transition hover:-translate-y-2">
+                    <div style={{ display: "none" }} className="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 hover:border-green-500 transition hover:-translate-y-2">
                         <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center rounded-lg mb-6">
-                            <BookOpen className="text-green-500" size={24} />
+                            {/* <BookOpen className="text-green-500" size={24} /> */}
                         </div>
                         <h3 className="text-xl font-bold text-white mb-3">Aulas Particulares</h3>
                         <p className="text-zinc-400 mb-6">
