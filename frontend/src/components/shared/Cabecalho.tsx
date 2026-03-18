@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Container from "./Container";
-// import Image from "next/image"; // Não precisamos mais importar Image
+import { Github } from 'lucide-react'; // Descomente se quiser usar o ícone no cabeçalho
 
 export default function Cabecalho() {
     return (
@@ -10,18 +10,29 @@ export default function Cabecalho() {
                 <div>
                     <Link href="/" className="text-2xl font-black text-white tracking-tighter">
                         Lucas<span className="text-green-500">David</span>
-                        <span className="text-green-500"></span>
                     </Link>
                 </div>
 
-                {/* Botão de Contato/LinkedIn */}
-                <Link
-                    href="https://www.linkedin.com/in/lucas-david-b3376a206/"
-                    target="_blank"
-                    className="bg-zinc-800 hover:bg-zinc-700 text-zinc-100 rounded-full px-6 py-2 text-sm font-medium transition duration-300 border border-zinc-700"
-                >
-                    LinkedIn
-                </Link>
+                {/* Botões de Acesso Rápido */}
+                <div className="flex items-center gap-4">
+                    <Link
+                        href="https://github.com/LucasDavid80"
+                        target="_blank"
+                        className="text-zinc-400 hover:text-white transition duration-300 flex items-center gap-2 text-sm font-medium"
+                    >
+                        <Github size={18} />
+                        GitHub
+                    </Link>
+
+
+                    <Link
+                        href="https://www.linkedin.com/in/lucas-david-b3376a206/"
+                        target="_blank"
+                        className="bg-zinc-800 hover:bg-zinc-700 text-zinc-100 rounded-full px-6 py-2 text-sm font-medium transition duration-300 border border-zinc-700"
+                    >
+                        LinkedIn
+                    </Link>
+                </div>
 
             </Container>
         </header>

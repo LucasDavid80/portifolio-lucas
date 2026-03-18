@@ -12,15 +12,15 @@ export default function Footer() {
                     Vamos trabalhar <span className="text-green-500">juntos?</span>
                 </h2>
 
+                {/* --- AQUI ESTÁ A MUDANÇA PRINCIPAL NO TEXTO --- */}
                 <p className="text-zinc-400 max-w-lg mb-10 text-lg">
-                    Seja para criar um site, desenvolver um app ou aulas de reforço.
-                    Estou disponível para novos projetos e desafios.
+                    Seja para desenvolver um sistema web, estruturar um aplicativo mobile ou conversar sobre novas oportunidades na área de tecnologia.
                 </p>
 
                 {/* Botões de Contato */}
                 <div className="flex flex-wrap gap-6 justify-center mb-16">
 
-                    {/* WhatsApp (O mais importante para Freela) */}
+                    {/* WhatsApp */}
                     <Link
                         href="https://wa.me/5535988890551"
                         target="_blank"
@@ -43,7 +43,7 @@ export default function Footer() {
                     {/* Botão de Email */}
                     <a
                         href="mailto:lucasdavidoliveira80@gmail.com"
-                        className="flex items-center gap-2 px-6 py-3 bg-zinc-800 text-white rounded-full font-medium hover:bg-zinc-700 transition duration-300"
+                        className="flex items-center gap-2 px-6 py-3 bg-zinc-800 text-white rounded-full font-medium hover:bg-zinc-700 transition duration-300 border border-zinc-700"
                     >
                         <Mail size={20} />
                         Email
