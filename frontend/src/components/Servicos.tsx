@@ -1,4 +1,4 @@
-import { Code, Smartphone } from 'lucide-react'; // Removi o 'BookOpen' pois não será mais usado
+import { Code, Smartphone, Database } from 'lucide-react'; // Trocamos BookOpen por Database
 
 export default function Servicos() {
     return (
@@ -9,10 +9,10 @@ export default function Servicos() {
                     Como posso <span className="text-green-500">ajudar você?</span>
                 </h2>
 
-                {/* ALTERADO: De grid-cols-3 para grid-cols-2 e adicionado max-w-4xl para centralizar */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {/* Retornamos para grid-cols-3 para incluir a nova habilidade */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                    {/* Card 1: Freelance Web */}
+                    {/* Card 1: Sites */}
                     <div className="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 hover:border-green-500 transition hover:-translate-y-2">
                         <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center rounded-lg mb-6">
                             <Code className="text-green-500" size={24} />
@@ -36,16 +36,16 @@ export default function Servicos() {
                         <span className="text-sm text-green-500 font-bold">Orçamento sob medida</span>
                     </div>
 
-                    {/* Card 3: Aulas (O dinheiro rápido) */}
-                    <div style={{ display: "none" }} className="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 hover:border-green-500 transition hover:-translate-y-2">
+                    {/* Card 3: Backend & Infraestrutura (Substituindo o card de Aulas) */}
+                    <div className="bg-zinc-950 p-8 rounded-2xl border border-zinc-800 hover:border-green-500 transition hover:-translate-y-2">
                         <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center rounded-lg mb-6">
-                            {/* <BookOpen className="text-green-500" size={24} /> */}
+                            <Database className="text-green-500" size={24} />
                         </div>
-                        <h3 className="text-xl font-bold text-white mb-3">Aulas Particulares</h3>
+                        <h3 className="text-xl font-bold text-white mb-3">Integração & Backend</h3>
                         <p className="text-zinc-400 mb-6">
-                            Reforço escolar e universitário em Física e Cálculo. Aprenda com quem vive a Engenharia no Inatel.
+                            Estruturação de regras de negócio, consumo de APIs RESTful e modelagem de dados escalável utilizando Firebase e SQL.
                         </p>
-                        <span className="text-sm text-green-500 font-bold">R$ 50,00 / hora</span>
+                        <span className="text-sm text-green-500 font-bold">Arquitetura Robusta</span>
                     </div>
 
                 </div>
