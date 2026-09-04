@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Círculo para sua Foto */}
             <div className="relative w-64 h-64 mb-8 border-4 border-green-500 rounded-full overflow-hidden shadow-xl shadow-green-500/20">
                 <Image
-                    src="/minha-foto.png"
+                    src="/lucas.png"
                     alt="Foto de Lucas David"
                     fill
                     className="object-cover"
@@ -27,7 +27,7 @@ export default function Hero() {
             <div className="flex gap-4">
                 {/* Botão de Currículo atualizado para apontar para o arquivo na pasta public */}
                 <Link
-                    href="/frontend/public/curriculo/Curriculo_Lucas_David.pdf"
+                    href="/curriculo/Curriculo_Lucas_David.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full transition transform hover:scale-105 shadow-lg"
