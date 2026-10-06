@@ -41,6 +41,7 @@ describe('ProjetosPage (Galeria de Projetos)', () => {
 
     expect(screen.getByText('PDF Toolkit')).toBeInTheDocument();
     expect(screen.getByText('Tech Taste')).toBeInTheDocument();
+    expect(screen.getByText('WC 2026 - Álbum de Figurinhas')).toBeInTheDocument();
     expect(screen.queryByText('IA Pinguim')).not.toBeInTheDocument();
   });
 
