@@ -76,6 +76,16 @@ const projetosData: Projeto[] = [
         github: 'https://github.com/LucasDavid80/tech-taste'
     },
     {
+        id: 'wc-2026-mobile',
+        nome: 'WC 2026 - Álbum de Figurinhas',
+        categoria: 'mobile',
+        descricao:
+            'Aplicativo mobile desenvolvido durante o curso Flutter Experience para gerenciar um álbum virtual da Copa do Mundo de 2026, com autenticação, progresso por seleção, cadastro de figurinhas e controle de repetidas.',
+        tags: ['Flutter', 'Dart', 'Dart Frog', 'SQLite', 'JWT', 'Provider'],
+        icone: Smartphone,
+        github: 'https://github.com/LucasDavid80/flutter-experience-worldcup-2026-mobile'
+    },
+    {
         id: 'maind',
         nome: 'Project mAInd',
         categoria: 'ia',
